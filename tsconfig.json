@@ -4,11 +4,6 @@
 		"moduleResolution": "node",
 		"moduleDetection": "force",
 		"target": "ES2021",
-		"lib": [
-			"DOM",
-			"DOM.Iterable",
-			"ES2021"
-		],
 		"allowSyntheticDefaultImports": true,
 		"jsx": "react",
 		"declaration": true,
@@ -35,7 +30,7 @@
 		"strictPropertyInitialization": false,
 		"useUnknownInCatchVariables": true,
 		"skipLibCheck": true,
-    		"noImplicitAny": false,
+		"noImplicitAny": false,
 		"noImplicitThis": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
