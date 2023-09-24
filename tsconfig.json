@@ -3,7 +3,7 @@
 		"module": "CommonJS",
 		"moduleResolution": "node",
 		"moduleDetection": "force",
-		"target": "ES2021",
+		"target": "ES2022",
 		"allowSyntheticDefaultImports": true,
 		"jsx": "react",
 		"declaration": true,
