@@ -1,41 +1,48 @@
 {
-	"compilerOptions": {
-		"module": "CommonJS",
-		"moduleResolution": "node",
-		"moduleDetection": "force",
-		"target": "ES2022",
-		"allowSyntheticDefaultImports": true,
-		"jsx": "react",
-		"declaration": true,
-		"pretty": true,
-		"newLine": "lf",
-		"stripInternal": true,
-		"strict": true,
-		"noEmitOnError": true,
-		"useDefineForClassFields": true,
-		"forceConsistentCasingInFileNames": true,
-		"removeComments": true,
-		"emitDecoratorMetadata": true,
-		"experimentalDecorators": true,
-		"sourceMap": true,
-		"esModuleInterop": true,
-		"incremental": true,
-		"allowUnreachableCode": false,
-		"alwaysStrict": true,
-		"allowUnusedLabels": false,
-		"exactOptionalPropertyTypes": false,
-		"strictBindCallApply": true,
-		"strictNullChecks": false,
-		"strictFunctionTypes": true,
-		"strictPropertyInitialization": false,
-		"useUnknownInCatchVariables": true,
-		"skipLibCheck": true,
-		"noImplicitAny": false,
-		"noImplicitThis": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"noFallthroughCasesInSwitch": true,
-		"noImplicitReturns": true,
-		"noUncheckedIndexedAccess": true
-	}
+  "compilerOptions": {
+    /* Base Options: */
+
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "allowSyntheticDefaultImports": true,
+
+    /* ModuleResolution: */
+
+    "module": "CommonJS",
+    "moduleResolution": "node",
+
+    /* Output: */
+    "outDir": "dist",
+    "sourceMap": true,
+    "jsx": "react",
+    "noEmitOnError": true,
+    "useDefineForClassFields": true,
+    "forceConsistentCasingInFileNames": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "incremental": true,
+
+    /* Prettify */
+    "pretty": true,
+    "newLine": "lf",
+    "removeComments": true,
+    "stripInternal": true,
+
+
+
+    /* Strictness */
+    "strict": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "exactOptionalPropertyTypes": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true
+  }
 }
