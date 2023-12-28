@@ -4,11 +4,11 @@
 
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "target": "es2022",
+    "target": "ES2022", // Node.js 18
     "allowJs": true,
     "moduleDetection": "force",
-  	"allowSyntheticDefaultImports": true, // To provide backwards compatibility, Node.js allows you to import most CommonJS packages with a default import. This flag tells TypeScript that it's okay to use import on CommonJS modules.
-		"resolveJsonModule": false, // ESM doesn't yet support JSON modules.
+    "allowSyntheticDefaultImports": true, // To provide backwards compatibility, Node.js allows you to import most CommonJS packages with a default import. This flag tells TypeScript that it's okay to use import on CommonJS modules.
+     "resolveJsonModule": false, // ESM doesn't yet support JSON modules.
 
     /* ModuleResolution: */
 
@@ -43,6 +43,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
-    "noUncheckedIndexedAccess": true
+    "noUncheckedIndexedAccess": true,
+    "noEmitOnError": true
   }
 }
