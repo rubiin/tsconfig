@@ -1,6 +1,6 @@
 {
 	"name": "@rubiin/tsconfig",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"description": "Shared TypeScript config for my projects",
 	"license": "MIT",
 	"repository": "rubiin/tsconfig",
