@@ -4,7 +4,7 @@
 
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "target": "ES2023", // Node.js 20
+    "target": "ES2022", // Node.js 20
     "allowJs": true,
     "moduleDetection": "force",
     "allowSyntheticDefaultImports": true, // To provide backwards compatibility, Node.js allows you to import most CommonJS packages with a default import. This flag tells TypeScript that it's okay to use import on CommonJS modules.
