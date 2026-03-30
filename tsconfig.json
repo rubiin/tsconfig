@@ -13,7 +13,7 @@
     /* ModuleResolution: */
 
     "module": "CommonJS",
-    "moduleResolution": "node",
+    "moduleResolution": "nodenext",
 
     /* Output: */
     "outDir": "dist",
