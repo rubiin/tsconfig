@@ -1,26 +1,26 @@
 {
-	"name": "@rubiin/tsconfig",
-	"version": "1.2.1",
-	"description": "Shared TypeScript config for my projects",
-	"license": "MIT",
-	"repository": "rubiin/tsconfig",
-	"author": {
-		"name": "Rubin Bhandari",
-		"email": "roobin.bhandari@gmail.com",
-		"url": "https://rubiin.vercel.app"
-	},
-	"main": "tsconfig.json",
-	"engines": {
-		"node": ">=18"
-	},
-	"files": [
-		"tsconfig.json"
-	],
-	"keywords": [
-		"tsconfig",
-		"typescript",
-		"ts",
-		"config",
-		"configuration"
-	]
+  "name": "@rubiin/tsconfig",
+  "version": "2.0.0",
+  "description": "Shared TypeScript config for my projects",
+  "license": "MIT",
+  "repository": "rubiin/tsconfig",
+  "author": {
+    "name": "Rubin Bhandari",
+    "email": "roobin.bhandari@gmail.com",
+    "url": "https://rubiin.is-a.dev"
+  },
+  "main": "tsconfig.json",
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "tsconfig.json"
+  ],
+  "keywords": [
+    "tsconfig",
+    "typescript",
+    "ts",
+    "config",
+    "configuration"
+  ]
 }
