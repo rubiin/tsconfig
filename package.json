@@ -15,9 +15,14 @@
     "email": "roobin.bhandari@gmail.com",
     "url": "https://rubiin.is-a.dev"
   },
-  "repository": "rubiin/tsconfig",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rubiin/tsconfig.git"
+  },
   "files": [
-    "tsconfig.json"
+    "tsconfig.json",
+    "tsconfig.node.json",
+    "tsconfig.web.json"
   ],
   "main": "tsconfig.json",
   "scripts": {

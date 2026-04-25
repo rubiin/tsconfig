@@ -12,7 +12,7 @@ _This config requires TypeScript 5 or later._
 
 ## Usage
 
-`tsconfig.json`
+Base preset (runtime-agnostic)
 
 ```json
 {
@@ -20,6 +20,25 @@ _This config requires TypeScript 5 or later._
   "compilerOptions": {
     "outDir": "dist"
   }
+}
+```
+
+Node preset (ESM-first)
+
+```json
+{
+  "extends": "@rubiin/tsconfig/tsconfig.node.json",
+  "compilerOptions": {
+    "outDir": "dist"
+  }
+}
+```
+
+Web preset (bundler-first)
+
+```json
+{
+  "extends": "@rubiin/tsconfig/tsconfig.web.json"
 }
 ```
 

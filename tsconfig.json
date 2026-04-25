@@ -10,15 +10,9 @@
     "allowSyntheticDefaultImports": true, // To provide backwards compatibility, Node.js allows you to import most CommonJS packages with a default import. This flag tells TypeScript that it's okay to use import on CommonJS modules.
     "resolveJsonModule": false, // ESM doesn't yet support JSON modules.
 
-    /* ModuleResolution: */
-
-    "module": "CommonJS",
-    "moduleResolution": "nodenext",
-
     /* Output: */
     "outDir": "dist",
     "sourceMap": true,
-    "jsx": "react",
     "useDefineForClassFields": true,
     "forceConsistentCasingInFileNames": true,
     "emitDecoratorMetadata": true,
