@@ -1,26 +1,32 @@
 {
   "name": "@rubiin/tsconfig",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Shared TypeScript config for my projects",
+  "keywords": [
+    "config",
+    "configuration",
+    "ts",
+    "tsconfig",
+    "typescript"
+  ],
   "license": "MIT",
-  "repository": "rubiin/tsconfig",
   "author": {
     "name": "Rubin Bhandari",
     "email": "roobin.bhandari@gmail.com",
     "url": "https://rubiin.is-a.dev"
   },
-  "main": "tsconfig.json",
-  "engines": {
-    "node": ">=22"
-  },
+  "repository": "rubiin/tsconfig",
   "files": [
     "tsconfig.json"
   ],
-  "keywords": [
-    "tsconfig",
-    "typescript",
-    "ts",
-    "config",
-    "configuration"
-  ]
+  "main": "tsconfig.json",
+  "scripts": {
+    "format": "oxfmt"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.46.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
 }

@@ -8,7 +8,7 @@
 npm install --save-dev @rubiin/tsconfig
 ```
 
-*This config requires TypeScript 5 or later.*
+_This config requires TypeScript 5 or later._
 
 ## Usage
 
@@ -16,10 +16,10 @@ npm install --save-dev @rubiin/tsconfig
 
 ```json
 {
-	"extends": "@rubiin/tsconfig",
-	"compilerOptions": {
-		"outDir": "dist"
-	}
+  "extends": "@rubiin/tsconfig",
+  "compilerOptions": {
+    "outDir": "dist"
+  }
 }
 ```
 
@@ -27,10 +27,10 @@ When you are targeting a higher version of Node.js, check the relevant ECMAScrip
 
 ```json
 {
-	"extends": "@rubiin/tsconfig",
-	"compilerOptions": {
-		"outDir": "dist",
-		"target": "ES2023"
-	}
+  "extends": "@rubiin/tsconfig",
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "ES2023"
+  }
 }
 ```
