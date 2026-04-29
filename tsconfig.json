@@ -11,7 +11,6 @@
     "resolveJsonModule": false, // ESM doesn't yet support JSON modules.
 
     /* Output: */
-    "outDir": "dist",
     "sourceMap": true,
     "useDefineForClassFields": true,
     "forceConsistentCasingInFileNames": true,
