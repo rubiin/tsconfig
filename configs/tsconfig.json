@@ -2,38 +2,110 @@
   "compilerOptions": {
     /* Base Options: */
 
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "target": "esnext", // Node.js 24
-    "allowJs": true,
+    "esModuleInterop": true, 
+    // Enables default import compatibility for CommonJS modules (`import x from "cjs"`)
+    // Mostly redundant in modern NodeNext setups, but harmless and avoids edge-case pain
+
+    "skipLibCheck": true, 
+    // Skips type checking of node_modules → faster builds
+    // Safe in most cases; only disable if debugging broken typings
+
+    "target": "ESNext", 
+    // Emit latest JS features (Node 20+/24 handles this fine)
+    // No downleveling → smaller, faster output
+
     "moduleDetection": "force",
-    "allowSyntheticDefaultImports": true, // To provide backwards compatibility, Node.js allows you to import most CommonJS packages with a default import. This flag tells TypeScript that it's okay to use import on CommonJS modules.
-    "resolveJsonModule": false, // ESM doesn't yet support JSON modules.
-    "verbatimModuleSyntax": true, // Preserves import/export syntax exactly
+    // Treat ALL files as modules (even without import/export)
+    // Prevents accidental global scope pollution
+
+    "allowSyntheticDefaultImports": true, 
+    // Lets you write default imports for CJS even if they don’t actually have one
+    // Type-level only (does not affect runtime)
+
+    "resolveJsonModule": true, 
+    // Allows importing `.json` files in TS
+    // ⚠️ Still requires `assert { type: "json" }` at runtime in Node ESM
+
+    "verbatimModuleSyntax": false, 
+    // If TRUE → TS preserves imports exactly (no rewriting)
+    // If FALSE → TS may rewrite for compatibility
+    // ⚠️ For strict ESM correctness, this is usually better set to TRUE
 
     /* Output: */
-    "sourceMap": true,
-    "useDefineForClassFields": true,
-    "forceConsistentCasingInFileNames": true,
-    "incremental": true,
-    "declaration": true,
+
+    "inlineSources": true, 
+    // Embeds original TS source in .map files for better debugging
+
+    "sourceMap": true, 
+    // Generates .map files for debugging TS in Node/devtools
+
+    "useDefineForClassFields": true, 
+    // Uses modern JS class field semantics (standard behavior)
+    // Should always be true unless targeting very old runtimes
+
+    "forceConsistentCasingInFileNames": true, 
+    // Prevents case mismatch bugs across OSes (Linux vs Windows)
+
+    "incremental": true, 
+    // Enables faster rebuilds via .tsbuildinfo cache
+
+    "declaration": true, 
+    // Emits `.d.ts` type definitions (important for libraries)
+
+    "declarationMap": true, 
+    // Maps `.d.ts` back to source TS (better DX for consumers)
 
     /* Prettify */
-    "pretty": true,
-    "newLine": "lf",
-    "removeComments": true,
-    "stripInternal": true,
+
+    "pretty": true, 
+    // Human-readable compiler output (dev only, no runtime impact)
+
+    "newLine": "lf", 
+    // Forces LF line endings (important for cross-platform consistency)
+
+    "removeComments": true, 
+    // Strips comments from output JS
+    // ⚠️ Can make debugging harder; consider disabling in dev
+
+    "stripInternal": true, 
+    // Removes declarations marked with `/** @internal */` from `.d.ts`
 
     /* Strictness */
-    "strict": true,
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "exactOptionalPropertyTypes": false,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "noUncheckedIndexedAccess": true,
-    "noEmitOnError": true
+
+    "strict": true, 
+    // Enables all strict type-checking options (baseline for sane TS)
+
+    "allowUnreachableCode": false, 
+    // Errors on dead code (good for catching logic mistakes)
+
+    "allowImportingTsExtensions": false,
+    // Disallows importing .ts files with extensions (enforces clean imports)
+    
+    "allowUnusedLabels": false, 
+    // Disallows unused labels (rarely needed, mostly cleanup)
+
+    "exactOptionalPropertyTypes": false, 
+    // If TRUE → `optional?: T` ≠ `T | undefined`
+    // ⚠️ Turning this ON improves correctness but can be annoying in existing code
+
+    "noUnusedLocals": true, 
+    // Errors on unused variables → keeps code clean
+
+    "noUnusedParameters": true, 
+    // Errors on unused function params → helps avoid sloppy APIs
+
+    "noFallthroughCasesInSwitch": true, 
+    // Prevents accidental fallthrough in switch statements
+
+    "noImplicitReturns": true, 
+    // Ensures all code paths return → avoids undefined bugs
+
+    "noUncheckedIndexedAccess": true, 
+    // Adds `undefined` to indexed access (obj[key])
+    // Forces you to handle missing values explicitly (very good safety)
+
+    "noEmitOnError": true 
+    // Prevents emitting JS if there are type errors
+    // Ensures broken code never reaches runtime
   }
 }
