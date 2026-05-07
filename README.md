@@ -8,7 +8,7 @@
 npm install --save-dev @rubiin/tsconfig
 ```
 
-_This config requires TypeScript 5 or later._
+_This config requires TypeScript 6 or later. Though it may work for Typescript 5_
 
 ## Usage
 
@@ -39,6 +39,15 @@ Web preset (bundler-first)
 ```json
 {
   "extends": "@rubiin/tsconfig/tsconfig.web.json"
+}
+```
+
+
+Bundler preset (bundler-first)
+
+```json
+{
+  "extends": "@rubiin/tsconfig/tsconfig.bundler.json"
 }
 ```
 
