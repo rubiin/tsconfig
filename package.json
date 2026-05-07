@@ -1,6 +1,6 @@
 {
   "name": "@rubiin/tsconfig",
-  "version": "2.1.5",
+  "version": "2.2.0",
   "description": "Shared TypeScript config for my projects",
   "keywords": [
     "config",
@@ -20,12 +20,13 @@
     "url": "https://github.com/rubiin/tsconfig.git"
   },
   "files": [
-    "tsconfig.json",
-    "tsconfig.node.json",
-    "tsconfig.nest.json",
-    "tsconfig.bundler.json"
+    "configs/tsconfig.json",
+    "configs/tsconfig.node.json",
+    "configs/tsconfig.nest.json",
+    "configs/tsconfig.web.json",
+    "configs/tsconfig.bundler.json"
   ],
-  "main": "tsconfig.json",
+  "main": "configs/tsconfig.json",
   "scripts": {
     "format": "oxfmt",
     "release": "bumpp && pnpm publish"
