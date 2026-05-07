@@ -1,6 +1,6 @@
 {
   "name": "@rubiin/tsconfig",
-  "version": "2.1.1",
+  "version": "2.1.5",
   "description": "Shared TypeScript config for my projects",
   "keywords": [
     "config",
@@ -22,14 +22,15 @@
   "files": [
     "tsconfig.json",
     "tsconfig.node.json",
-    "tsconfig.web.json"
+    "tsconfig.nest.json",
+    "tsconfig.bundler.json"
   ],
   "main": "tsconfig.json",
   "scripts": {
     "format": "oxfmt"
   },
   "devDependencies": {
-    "oxfmt": "^0.46.0"
+    "oxfmt": "^0.48.0"
   },
   "engines": {
     "node": ">=22"

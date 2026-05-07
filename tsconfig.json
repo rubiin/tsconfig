@@ -9,14 +9,14 @@
     "moduleDetection": "force",
     "allowSyntheticDefaultImports": true, // To provide backwards compatibility, Node.js allows you to import most CommonJS packages with a default import. This flag tells TypeScript that it's okay to use import on CommonJS modules.
     "resolveJsonModule": false, // ESM doesn't yet support JSON modules.
+    "verbatimModuleSyntax": true, // Preserves import/export syntax exactly
 
     /* Output: */
     "sourceMap": true,
     "useDefineForClassFields": true,
     "forceConsistentCasingInFileNames": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
     "incremental": true,
+    "declaration": true,
 
     /* Prettify */
     "pretty": true,

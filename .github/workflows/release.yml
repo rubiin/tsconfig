@@ -31,10 +31,7 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Install Dependencies
-        run: pnpm i
-
-      - name: PNPM build
-        run: pnpm run build
+        run: pnpm install --shamefully-hoist
 
       - name: Publish to NPM
         run: npm publish --access public
