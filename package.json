@@ -27,9 +27,11 @@
   ],
   "main": "tsconfig.json",
   "scripts": {
-    "format": "oxfmt"
+    "format": "oxfmt",
+    "release": "bumpp && pnpm publish"
   },
   "devDependencies": {
+    "bumpp": "^11.0.1",
     "oxfmt": "^0.48.0"
   },
   "engines": {
