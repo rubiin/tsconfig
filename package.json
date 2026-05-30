@@ -28,12 +28,10 @@
   ],
   "main": "configs/tsconfig.json",
   "scripts": {
-    "format": "oxfmt",
-    "release": "bumpp && pnpm publish"
+    "format": "oxfmt"
   },
   "devDependencies": {
-    "bumpp": "^11.0.1",
-    "oxfmt": "^0.48.0"
+    "oxfmt": "^0.52.0"
   },
   "engines": {
     "node": ">=22"
